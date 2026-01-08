@@ -48,13 +48,7 @@ npx http-server
 
 ## Geliştirici
 
-Oğuz Han Duran - 90240000238
-
-## Lisans
-
-MIT
-
-
+Oğuz Han Duran - @oguz-hd
 
 
 
