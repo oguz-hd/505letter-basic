@@ -1,0 +1,46 @@
+# IDE ve Editör
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# İşletim Sistemi
+.DS_Store
+Thumbs.db
+.env.local
+.env.*.local
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Derleme ve Build Çıktıları
+dist/
+build/
+*.o
+*.a
+*.lib
+
+# Log Dosyaları
+*.log
+logs/
+
+# Temporary Files
+*.tmp
+*.bak
+*.swp
+*~
+.DS_Store

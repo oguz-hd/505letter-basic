@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Detayı - 505letter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--oğuz han duran - 90240000238-->
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="header-top-content">
+                <div class="logo">505letter</div>
+                <div class="header-search">
+                    <input 
+                        type="text" 
+                        id="header-search-input" 
+                        placeholder="Film, tür veya oyuncu ara..."
+                    >
+                </div>
+            </div>
+        </div>
+        <nav class="nav-main">
+            <div class="nav-main-content">
+                <ul class="nav-links">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="popular.html">Popüler Filmler</a></li>
+                    <li><a href="latest.html">Son Çıkanlar</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="movie-detail">
+            <div id="movie-poster">
+                <!--  -->
+            </div>
+
+            <div class="movie-info">
+                <div class="movie-header">
+                    <h1 id="movie-title">Film Başlığı</h1>
+                    <div class="movie-meta">
+                        <span id="movie-year">Yıl</span>
+                        <span id="movie-rating">Puan</span>
+                    </div>
+                    <div id="movie-genres" class="movie-genres">
+                        <!--  -->
+                    </div>
+                </div>
+
+                <div class="movie-description-section">
+                    <h3>Açıklama</h3>
+                    <p id="movie-description" class="movie-description">
+                        Film açıklaması buraya gelecek.
+                    </p>
+                </div>
+
+                <div class="movie-cast">
+                    <h3>Oyuncular</h3>
+                    <div id="movie-cast">
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="comments-section">
+            <h2>Yorumlar</h2>
+            
+            <form id="comment-form" class="comment-form">
+                <div class="form-group">
+                    <label for="comment-username">Kullanıcı Adı</label>
+                    <input 
+                        type="text" 
+                        id="comment-username" 
+                        name="username" 
+                        required
+                        placeholder="Adınızı girin"
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="comment-text">Yorum</label>
+                    <textarea 
+                        id="comment-text" 
+                        name="comment" 
+                        required
+                        placeholder="Yorumunuzu yazın..."
+                    ></textarea>
+                </div>
+                <button type="submit" class="btn">Yorum Ekle</button>
+            </form>
+
+            <div id="comments-list" class="comments-list">
+                <!--  -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>505letter</h3>
+                <p>En sevdiğiniz filmleri keşfedin ve yorumlarınızı paylaşın. Geniş film koleksiyonumuzda aradığınızı bulun.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hızlı Linkler</h3>
+                <a href="index.html">Ana Sayfa</a>
+                <a href="popular.html">Popüler Filmler</a>
+                <a href="latest.html">Son Çıkanlar</a>
+                <a href="contact.html">İletişim</a>
+            </div>
+            <div class="footer-section">
+                <h3>İletişim</h3>
+                <p>Email: info@505letter.com</p>
+                <p>Tel: +90 (212) 123 45 67</p>
+                <p>Adres: İstanbul, Türkiye</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 505letter. Tüm hakları saklıdır.</p>
+            <div class="social-links">
+                <a href="#" title="Facebook">f</a>
+                <a href="#" title="Twitter">t</a>
+                <a href="#" title="Instagram">i</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+[
+  {
+    "movie_id": 1,
+    "username": "oguz",
+    "comment": "Bu film hayatımı değiştirdi.",
+    "date": "2025-01-01"
+  },
+  {
+    "movie_id": 1,
+    "username": "filmsever",
+    "comment": "Morgan Freeman'ın performansı muhteşem!",
+    "date": "2025-01-02"
+  }
+]
+

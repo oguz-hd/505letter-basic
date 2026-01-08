@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - 505letter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--oğuz han duran - 90240000238-->
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="header-top-content">
+                <div class="logo">505letter</div>
+                <div class="header-search">
+                    <input 
+                        type="text" 
+                        id="header-search-input" 
+                        placeholder="Film, tür veya oyuncu ara..."
+                    >
+                </div>
+            </div>
+        </div>
+        <nav class="nav-main">
+            <div class="nav-main-content">
+                <ul class="nav-links">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="popular.html">Popüler Filmler</a></li>
+                    <li><a href="latest.html">Son Çıkanlar</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>İletişim</h1>
+        
+        <div class="contact-section">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h4>Email</h4>
+                    <p>info@filmarsivi.com</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Telefon</h4>
+                    <p>+90 (212) 123 45 67</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Adres</h4>
+                    <p>İstanbul, Türkiye</p>
+                </div>
+            </div>
+
+            <form id="contact-form" class="comment-form">
+                <div class="form-group">
+                    <label for="contact-name">Adınız Soyadınız *</label>
+                    <input 
+                        type="text" 
+                        id="contact-name" 
+                        name="name" 
+                        required
+                        placeholder="Adınızı ve soyadınızı girin"
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Email *</label>
+                    <input 
+                        type="email" 
+                        id="contact-email" 
+                        name="email" 
+                        required
+                        placeholder="Email adresinizi girin"
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="contact-subject">Konu *</label>
+                    <input 
+                        type="text" 
+                        id="contact-subject" 
+                        name="subject" 
+                        required
+                        placeholder="Mesaj konusunu girin"
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">Mesajınız *</label>
+                    <textarea 
+                        id="contact-message" 
+                        name="message" 
+                        required
+                        rows="6"
+                        placeholder="Mesajınızı yazın..."
+                    ></textarea>
+                </div>
+                <button type="submit" class="btn">Mesaj Gönder</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>505letter</h3>
+                <p>En sevdiğiniz filmleri keşfedin ve yorumlarınızı paylaşın. Geniş film koleksiyonumuzda aradığınızı bulun.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hızlı Linkler</h3>
+                <a href="index.html">Ana Sayfa</a>
+                <a href="popular.html">Popüler Filmler</a>
+                <a href="latest.html">Son Çıkanlar</a>
+                <a href="contact.html">İletişim</a>
+            </div>
+            <div class="footer-section">
+                <h3>İletişim</h3>
+                <p>Email: info@505letter.com</p>
+                <p>Tel: +90 (212) 123 45 67</p>
+                <p>Adres: İstanbul, Türkiye</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 505letter. Tüm hakları saklıdır.</p>
+            <div class="social-links">
+                <a href="#" title="Facebook">f</a>
+                <a href="#" title="Twitter">t</a>
+                <a href="#" title="Instagram">i</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/header-footer.js"></script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Mesajınız alındı! Teşekkür ederiz.');
+            e.target.reset();
+        });
+    </script>
+</body>
+</html>
+

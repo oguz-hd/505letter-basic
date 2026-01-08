@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yönetici Paneli - 505letter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--oğuz han duran - 90240000238-->
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="header-top-content">
+                <div class="logo">505letter</div>
+                <div class="header-search">
+                    <input 
+                        type="text" 
+                        id="header-search-input" 
+                        placeholder="Film, tür veya oyuncu ara..."
+                    >
+                </div>
+            </div>
+        </div>
+        <nav class="nav-main">
+            <div class="nav-main-content">
+                <ul class="nav-links">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="popular.html">Popüler Filmler</a></li>
+                    <li><a href="latest.html">Son Çıkanlar</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Yeni Film Ekle</h1>
+
+      
+
+        <form id="admin-form" class="admin-form">
+            <h2>Film Bilgileri</h2>
+
+            <div class="form-group">
+                <label for="film-title">Film Başlığı *</label>
+                <input 
+                    type="text" 
+                    id="film-title" 
+                    name="title" 
+                    required
+                    placeholder="Örn: The Shawshank Redemption"
+                >
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="film-year">Yıl *</label>
+                    <input 
+                        type="number" 
+                        id="film-year" 
+                        name="year" 
+                        required
+                        min="1888"
+                        max="2100"
+                        placeholder="Örn: 1994"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="film-rating">Puan (0-10) *</label>
+                    <input 
+                        type="number" 
+                        id="film-rating" 
+                        name="rating" 
+                        required
+                        min="0"
+                        max="10"
+                        step="0.1"
+                        placeholder="Örn: 9.3"
+                    >
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="film-genre">Tür (virgülle ayırın) *</label>
+                <input 
+                    type="text" 
+                    id="film-genre" 
+                    name="genre" 
+                    required
+                    placeholder="Örn: Drama, Crime, Thriller"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="film-description">Açıklama *</label>
+                <textarea 
+                    id="film-description" 
+                    name="description" 
+                    required
+                    rows="4"
+                    placeholder="Film açıklamasını yazın..."
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="film-cast">Oyuncular (virgülle ayırın) *</label>
+                <input 
+                    type="text" 
+                    id="film-cast" 
+                    name="cast" 
+                    required
+                    placeholder="Örn: Tim Robbins, Morgan Freeman"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="film-poster">Poster URL *</label>
+                <input 
+                    type="url" 
+                    id="film-poster" 
+                    name="poster" 
+                    required
+                    placeholder="Örn: https://example.com/poster.jpg veya img/film.jpg"
+                >
+            </div>
+
+            <button type="submit" class="btn">Film Ekle</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>505letter</h3>
+                <p>En sevdiğiniz filmleri keşfedin ve yorumlarınızı paylaşın. Geniş film koleksiyonumuzda aradığınızı bulun.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hızlı Linkler</h3>
+                <a href="index.html">Ana Sayfa</a>
+                <a href="popular.html">Popüler Filmler</a>
+                <a href="latest.html">Son Çıkanlar</a>
+                <a href="contact.html">İletişim</a>
+            </div>
+            <div class="footer-section">
+                <h3>İletişim</h3>
+                <p>Email: info@505letter.com</p>
+                <p>Tel: +90 (212) 123 45 67</p>
+                <p>Adres: İstanbul, Türkiye</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 505letter. Tüm hakları saklıdır.</p>
+            <div class="social-links">
+                <a href="#" title="Facebook">f</a>
+                <a href="#" title="Twitter">t</a>
+                <a href="#" title="Instagram">i</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+  </html>
